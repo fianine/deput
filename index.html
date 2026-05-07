@@ -1,0 +1,199 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>The Wedding Of — Putry & Dede</title>
+  <meta name="description" content="Undangan Pernikahan Putry & Dede" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <!-- AUDIO -->
+  <audio id="bgm" preload="none" loop>
+    <!-- ganti file musikmu -->
+    <source src="assets/bgm.mp3" type="audio/mpeg" />
+  </audio>
+
+  <!-- FLOATING CONTROLS -->
+  <div class="floating">
+    <button id="musicBtn" class="fab" type="button" aria-label="Putar musik">♫</button>
+    <a class="fab" href="#top" aria-label="Ke atas">↑</a>
+  </div>
+
+  <!-- COVER (locked until open) -->
+  <section id="cover" class="cover" aria-label="Cover undangan">
+    <div id="coverScene" class="scene cover__scene" aria-hidden="true">
+      <div class="layer" data-depth="0.10"><div class="bokeh bokeh--a"></div></div>
+      <div class="layer" data-depth="0.25"><div class="bokeh bokeh--b"></div></div>
+      <div class="layer" data-depth="0.40"><div class="floral floral--top"></div></div>
+      <div class="layer" data-depth="0.55"><div class="floral floral--bottom"></div></div>
+    </div>
+
+    <div class="cover__card">
+      <p class="cap">The Wedding Of</p>
+      <h1 class="names">Putry <span class="amp">&amp;</span> Dede</h1>
+
+      <div class="divider"></div>
+
+      <p class="cap">Kepada Yth.</p>
+      <p class="to">Bapak/Ibu/Saudara/i</p>
+      <h2 class="guest" id="guestName">Tamu Undangan</h2>
+      <p class="note">Mohon maaf jika ada kesalahan penulisan nama / gelar.</p>
+
+      <button id="openInvite" class="btn btn--primary" type="button">
+        Buka Undangan
+      </button>
+    </div>
+  </section>
+
+  <!-- MAIN CONTENT -->
+  <main id="main" class="main" aria-label="Isi undangan">
+    <!-- HERO -->
+    <section id="top" class="hero">
+      <div id="heroScene" class="scene hero__scene" aria-hidden="true">
+        <div class="layer" data-depth="0.10"><div class="mist mist--1"></div></div>
+        <div class="layer" data-depth="0.25"><div class="mist mist--2"></div></div>
+        <div class="layer" data-depth="0.45">
+          <div class="floral floral--left"></div>
+          <div class="floral floral--right"></div>
+        </div>
+      </div>
+
+      <div class="hero__card">
+        <p class="cap">The Wedding Of</p>
+        <h2 class="names2">Putry <span class="amp">&amp;</span> Dede</h2>
+        <p class="dateLine">Friday, 08 May 2026</p>
+
+        <div class="countdown" aria-label="Hitung mundur">
+          <div class="cd"><span id="d">--</span><small>Hari</small></div>
+          <div class="cd"><span id="h">--</span><small>Jam</small></div>
+          <div class="cd"><span id="m">--</span><small>Menit</small></div>
+          <div class="cd"><span id="s">--</span><small>Detik</small></div>
+        </div>
+
+        <div class="row">
+          <a id="saveDateBtn" class="btn" href="#" target="_blank" rel="noreferrer">Simpan Tanggal</a>
+          <a class="btn btn--ghost" href="#galeri">Lihat Galeri</a>
+        </div>
+      </div>
+
+      <div class="scrollHint" aria-hidden="true">Scroll</div>
+    </section>
+
+    <!-- QUOTE -->
+    <section class="section">
+      <div class="container card">
+        <p class="quote">
+          “Dan di antara tanda-tanda (kebesaran)-Nya ialah Dia menciptakan pasangan-pasangan untukmu dari jenismu sendiri,
+          agar kamu cenderung dan merasa tenteram kepadanya, dan Dia menjadikan di antaramu rasa kasih dan sayang.”
+        </p>
+        <p class="muted center">Q.S Ar-Rum : 21</p>
+      </div>
+    </section>
+
+    <!-- BRIDE & GROOM -->
+    <section class="section" id="mempelai">
+      <div class="container">
+        <h3 class="h3 center">Bride &amp; Groom</h3>
+        <p class="muted center">
+          Assalamu’alaikum Warahmatullahi Wabarakatuh<br/>
+          Maha Suci Allah yang telah menciptakan makhluk-Nya berpasang-pasangan.
+        </p>
+
+        <div class="grid2">
+          <article class="card profile">
+            <div class="avatar" aria-hidden="true" style="background-image:url('image/WhatsApp%20Image%202026-05-07%20at%208.07.14%20PM.jpeg')"></div>
+            <h4 class="h4">Putri Diantari</h4>
+           </article>
+
+          <article class="card profile">
+            <div class="avatar" aria-hidden="true" style="background-image:url('image/WhatsApp%20Image%202026-05-07%20at%208.07.15%20PM.jpeg')"></div>
+            <h4 class="h4">Dede Darmawan</h4>
+            </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- GALLERY -->
+    <section class="section" id="galeri">
+      <div class="container">
+        <h3 class="h3 center">Our Moments</h3>
+
+        <div class="gallery" id="gallery">
+          <button class="g" data-src="image/WhatsApp%20Image%202026-05-07%20at%208.07.10%20PM.jpeg" aria-label="Buka foto 1" style="background-image:url('image/WhatsApp%20Image%202026-05-07%20at%208.07.10%20PM.jpeg')"></button>
+          <button class="g" data-src="image/WhatsApp%20Image%202026-05-07%20at%208.07.11%20PM.jpeg" aria-label="Buka foto 2" style="background-image:url('image/WhatsApp%20Image%202026-05-07%20at%208.07.11%20PM.jpeg')"></button>
+          <button class="g" data-src="image/WhatsApp%20Image%202026-05-07%20at%208.07.14%20PM.jpeg" aria-label="Buka foto 3" style="background-image:url('image/WhatsApp%20Image%202026-05-07%20at%208.07.14%20PM.jpeg')"></button>
+          <button class="g" data-src="image/WhatsApp%20Image%202026-05-07%20at%208.07.15%20PM.jpeg" aria-label="Buka foto 4" style="background-image:url('image/WhatsApp%20Image%202026-05-07%20at%208.07.15%20PM.jpeg')"></button>
+          <button class="g" data-src="image/WhatsApp%20Image%202026-05-07%20at%208.07.15%20PM(1).jpeg" aria-label="Buka foto 5" style="background-image:url('image/WhatsApp%20Image%202026-05-07%20at%208.07.15%20PM(1).jpeg')"></button>
+        </div>
+
+        <p class="tiny muted center">Klik foto untuk melihat ukuran penuh.</p>
+      </div>
+    </section>
+
+    <!-- LOCATION -->
+    <section class="section" id="lokasi">
+      <div class="container">
+        <div class="card center">
+          <h3 class="h3">Lokasi</h3>
+          <p class="muted">Jalan Lettu Napis 3</p>
+          <div class="mapEmbed">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.242206655268!2d106.71583397376033!3d-6.231767861025509!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69fa08bc341f71%3A0x591398ea57090c04!2sGg.%20Lettu%20Napis%203%2C%20RW.007%2C%20Sudimara%20Tim.%2C%20Kec.%20Ciledug%2C%20Kota%20Tangerang%2C%20Banten%2015151!5e0!3m2!1sid!2sid!4v1778162204212!5m2!1sid!2sid"
+              width="600"
+              height="450"
+              style="border:0;"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              title="Lokasi Jalan Lettu Napis 3">
+            </iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- WEDDING GIFT -->
+    <section class="section" id="gift">
+      <div class="container">
+        <div class="card center">
+          <h3 class="h3">Wedding Gift</h3>
+          <p class="muted">
+            Doa restu Anda merupakan hadiah terindah bagi kami. Jika berkenan mengirimkan tanda kasih, dapat melalui rekening berikut.
+          </p>
+          <p class="muted">Bank BCA</p>
+          <p class="big">7655283137</p>
+          <p>Dede Darmawan</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- THANK YOU -->
+    <section class="section">
+      <div class="container card center">
+        <h3 class="h3">Terima Kasih</h3>
+        <p class="muted">
+          Merupakan suatu kebahagiaan dan kehormatan bagi kami apabila Bapak/Ibu/Saudara/i berkenan hadir dan memberikan doa restu.
+        </p>
+        <p class="muted">Wassalamu’alaikum warahmatullahi wabarakatuh</p>
+        <h2 class="names2">Putry <span class="amp">&amp;</span> Dede</h2>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <p class="tiny muted center">© 2026 • Raja Kegelapan</p>
+    </footer>
+  </main>
+
+  <!-- LIGHTBOX -->
+  <div id="lightbox" class="lightbox" aria-hidden="true">
+    <button id="lbClose" class="lbClose" aria-label="Tutup">✕</button>
+    <img id="lbImg" alt="Foto galeri" />
+  </div>
+
+  <!-- Parallax.js (CDN) -->
+  <script src="https://cdn.jsdelivr.net/npm/parallax-js@3.1.0/dist/parallax.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
