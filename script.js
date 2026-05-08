@@ -108,27 +108,6 @@ function initParallax(){
 }
 initParallax();
 
-// ---------- Countdown ----------
-const target = new Date(CONFIG.dateISO).getTime();
-const elD = $("d"), elH = $("h"), elM = $("m"), elS = $("s");
-
-function tick(){
-  const now = Date.now();
-  const diff = Math.max(0, target - now);
-
-  const days  = Math.floor(diff / (1000*60*60*24));
-  const hours = Math.floor((diff / (1000*60*60)) % 24);
-  const mins  = Math.floor((diff / (1000*60)) % 60);
-  const secs  = Math.floor((diff / 1000) % 60);
-
-  elD.textContent = days;
-  elH.textContent = pad(hours);
-  elM.textContent = pad(mins);
-  elS.textContent = pad(secs);
-}
-tick();
-setInterval(tick, 1000);
-
 // "Simpan Tanggal"
 $("saveDateBtn").href = buildGoogleCalLink();
 
