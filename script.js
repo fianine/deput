@@ -8,15 +8,15 @@
 
 const CONFIG = {
   couple: "Aulia & Reza",
-  dateISO: "2026-05-08T08:00:00+07:00", // tanggal akad (WIB)
+  dateISO: "2026-05-08T14:00:00+07:00", // tanggal akad (WIB)
   locationText: "Surabaya",
   // Link "Simpan Tanggal" (Google Calendar event template)
   calendar: {
     title: "Wedding Aulia & Reza",
     details: "Undangan Pernikahan",
     location: "Surabaya",
-    start: "20260508T010000Z",
-    end: "20260508T070000Z"
+    start: "20260508T070000Z",
+    end: "20260508T080000Z"
   }
 };
 
